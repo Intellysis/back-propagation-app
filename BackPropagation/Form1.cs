@@ -17,15 +17,10 @@ namespace BackPropagation
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             //2 input
             //3 hidden
             //1 output
-            nn = new NeuralNet(6,10,1);
-            
+            nn = new NeuralNet(6, 10, 1);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -35,28 +30,10 @@ namespace BackPropagation
             nn.run();
             textBox3.Text = "" + nn.getOuputData(0);
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void trainBtn_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < Convert.ToInt32(textBox4.Text); i++)
+            for (int i = 0; i < Convert.ToInt32(textBox7.Text); i++)
             {
                 //pos is neuron number at 0
                 //data should be from textBox1 as an input and is set as 1 for sample
@@ -106,6 +83,18 @@ namespace BackPropagation
                 nn.setDesiredOutput(0, 1.0);
                 nn.learn();
             }
+        }
+
+        private void testBtn_Click(object sender, EventArgs e)
+        {
+            nn.setInputs(0, Convert.ToDouble(textBox1.Text));
+            nn.setInputs(1, Convert.ToDouble(textBox2.Text));
+            nn.setInputs(2, Convert.ToDouble(textBox3.Text));
+            nn.setInputs(3, Convert.ToDouble(textBox4.Text));
+            nn.setInputs(4, Convert.ToDouble(textBox5.Text));
+            nn.setInputs(5, Convert.ToDouble(textBox6.Text));
+            nn.run();
+            label5.Text = "" + nn.getOuputData(0);
         }
     }
 }
