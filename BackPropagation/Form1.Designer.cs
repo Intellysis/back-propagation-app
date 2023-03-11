@@ -57,10 +57,10 @@
             this.label10.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label10.Location = new System.Drawing.Point(255, 26);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label10.Location = new System.Drawing.Point(191, 21);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(696, 48);
+            this.label10.Size = new System.Drawing.Size(554, 38);
             this.label10.TabIndex = 20;
             this.label10.Text = "Diabetes Diagnosis Prediction";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,55 +69,55 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(431, 447);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.textBox6.Location = new System.Drawing.Point(323, 363);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(190, 30);
+            this.textBox6.Size = new System.Drawing.Size(144, 26);
             this.textBox6.TabIndex = 32;
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(431, 390);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.textBox5.Location = new System.Drawing.Point(323, 317);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(190, 30);
+            this.textBox5.Size = new System.Drawing.Size(144, 26);
             this.textBox5.TabIndex = 31;
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(431, 335);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.textBox4.Location = new System.Drawing.Point(323, 272);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 30);
+            this.textBox4.Size = new System.Drawing.Size(144, 26);
             this.textBox4.TabIndex = 30;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(431, 282);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.textBox3.Location = new System.Drawing.Point(323, 229);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 30);
+            this.textBox3.Size = new System.Drawing.Size(144, 26);
             this.textBox3.TabIndex = 29;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(431, 228);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.textBox2.Location = new System.Drawing.Point(323, 185);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 30);
+            this.textBox2.Size = new System.Drawing.Size(144, 26);
             this.textBox2.TabIndex = 28;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(431, 169);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.textBox1.Location = new System.Drawing.Point(323, 137);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 30);
+            this.textBox1.Size = new System.Drawing.Size(144, 26);
             this.textBox1.TabIndex = 27;
             // 
             // label8
@@ -126,10 +126,10 @@
             this.label8.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(246, 447);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label8.Location = new System.Drawing.Point(184, 363);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 28);
+            this.label8.Size = new System.Drawing.Size(121, 23);
             this.label8.TabIndex = 26;
             this.label8.Text = "Age(21-81)";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -140,10 +140,10 @@
             this.label7.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Location = new System.Drawing.Point(38, 390);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Location = new System.Drawing.Point(28, 317);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(356, 28);
+            this.label7.Size = new System.Drawing.Size(295, 23);
             this.label7.TabIndex = 25;
             this.label7.Text = "Diabetes Pedigree(0.08-2.42)";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -154,10 +154,10 @@
             this.label6.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label6.Location = new System.Drawing.Point(237, 337);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Location = new System.Drawing.Point(178, 274);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 28);
+            this.label6.Size = new System.Drawing.Size(129, 23);
             this.label6.TabIndex = 24;
             this.label6.Text = "BMI(0-67.1)";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,10 +168,10 @@
             this.label3.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Location = new System.Drawing.Point(119, 282);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(89, 229);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 28);
+            this.label3.Size = new System.Drawing.Size(228, 23);
             this.label3.TabIndex = 23;
             this.label3.Text = "Blood Pressure(0-122)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -182,10 +182,10 @@
             this.label2.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label2.Location = new System.Drawing.Point(132, 228);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(99, 185);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(262, 28);
+            this.label2.Size = new System.Drawing.Size(218, 23);
             this.label2.TabIndex = 22;
             this.label2.Text = "Glucose Level(0-199)";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -196,10 +196,10 @@
             this.label1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(167, 171);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(125, 139);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 28);
+            this.label1.Size = new System.Drawing.Size(187, 23);
             this.label1.TabIndex = 21;
             this.label1.Text = "Pregnancies(0-17)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,10 +209,10 @@
             // 
             this.label9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label9.Location = new System.Drawing.Point(714, 409);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label9.Location = new System.Drawing.Point(525, 332);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(350, 68);
+            this.label9.Size = new System.Drawing.Size(288, 83);
             this.label9.TabIndex = 35;
             this.label9.Text = "Closer to 0 output value indicate a lower chance of diabetes";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,10 +221,10 @@
             // 
             this.outputLbl.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.outputLbl.Location = new System.Drawing.Point(714, 203);
-            this.outputLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.outputLbl.Location = new System.Drawing.Point(536, 165);
+            this.outputLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLbl.Name = "outputLbl";
-            this.outputLbl.Size = new System.Drawing.Size(350, 171);
+            this.outputLbl.Size = new System.Drawing.Size(262, 139);
             this.outputLbl.TabIndex = 34;
             this.outputLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -233,10 +233,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Stencil", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Location = new System.Drawing.Point(721, 104);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(541, 84);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(339, 95);
+            this.label4.Size = new System.Drawing.Size(272, 76);
             this.label4.TabIndex = 33;
             this.label4.Text = "Result";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -247,10 +247,10 @@
             this.testBtn.Enabled = false;
             this.testBtn.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.testBtn.Location = new System.Drawing.Point(431, 516);
-            this.testBtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.testBtn.Location = new System.Drawing.Point(323, 419);
+            this.testBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.testBtn.Name = "testBtn";
-            this.testBtn.Size = new System.Drawing.Size(190, 48);
+            this.testBtn.Size = new System.Drawing.Size(142, 39);
             this.testBtn.TabIndex = 36;
             this.testBtn.Text = "Test";
             this.testBtn.UseVisualStyleBackColor = false;
@@ -261,10 +261,10 @@
             this.trainBtn.BackColor = System.Drawing.SystemColors.Highlight;
             this.trainBtn.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trainBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.trainBtn.Location = new System.Drawing.Point(220, 516);
-            this.trainBtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.trainBtn.Location = new System.Drawing.Point(165, 419);
+            this.trainBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trainBtn.Name = "trainBtn";
-            this.trainBtn.Size = new System.Drawing.Size(190, 48);
+            this.trainBtn.Size = new System.Drawing.Size(142, 39);
             this.trainBtn.TabIndex = 37;
             this.trainBtn.Text = "Train";
             this.trainBtn.UseVisualStyleBackColor = false;
@@ -273,10 +273,10 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(431, 104);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.textBox7.Location = new System.Drawing.Point(323, 84);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(190, 30);
+            this.textBox7.Size = new System.Drawing.Size(144, 26);
             this.textBox7.TabIndex = 38;
             // 
             // label11
@@ -285,10 +285,10 @@
             this.label11.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label11.Location = new System.Drawing.Point(168, 104);
-            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label11.Location = new System.Drawing.Point(126, 84);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(224, 28);
+            this.label11.Size = new System.Drawing.Size(186, 23);
             this.label11.TabIndex = 39;
             this.label11.Text = "Number of Epochs";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -299,10 +299,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(802, 516);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.button1.Location = new System.Drawing.Point(602, 419);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 48);
+            this.button1.Size = new System.Drawing.Size(142, 39);
             this.button1.TabIndex = 40;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = false;
@@ -310,9 +310,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1224, 671);
+            this.ClientSize = new System.Drawing.Size(918, 545);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox7);
@@ -334,7 +334,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

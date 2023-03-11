@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Backprop;
+using ExcelDataReader;
 
 namespace BackPropagation
 {
     public partial class Form1 : Form
     {
         NeuralNet nn;
+        private static string projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+        private string filePath = projectDirectory + @"\\diabetes.xlsx";
+
         public Form1()
         {
             InitializeComponent();
-            //2 input
-            //3 hidden
-            //1 output
-            nn = new NeuralNet(6, 10, 1);
+            nn = new NeuralNet(6, 100, 1);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -35,55 +39,48 @@ namespace BackPropagation
         {
             if (textBox7.Text != "")
             {
-                for (int i = 0; i < Convert.ToInt32(textBox7.Text); i++)
+                using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
                 {
-                    //pos is neuron number at 0
-                    //data should be from textBox1 as an input and is set as 1 for sample
-                    //AND operations
-                    nn.setInputs(0, 6.0);
-                    nn.setInputs(1, 148.0);
-                    nn.setInputs(2, 72.0);
-                    nn.setInputs(3, 33.6);
-                    nn.setInputs(4, 0.627);
-                    nn.setInputs(5, 50.0);
-                    nn.setDesiredOutput(0, 1.0);
-                    nn.learn();
 
-                    nn.setInputs(0, 1.0);
-                    nn.setInputs(1, 85.0);
-                    nn.setInputs(2, 66.0);
-                    nn.setInputs(3, 26.6);
-                    nn.setInputs(4, 0.351);
-                    nn.setInputs(5, 31.0);
-                    nn.setDesiredOutput(0, 0.0);
-                    nn.learn();
+                    using (var reader = ExcelReaderFactory.CreateReader(stream))
+                    {
+                        int MAX_COLUMN = reader.FieldCount;
+                        int MAX_EPOCHS = Convert.ToInt32(textBox7.Text);
+                        int ROW_CTR = 0;
+                        for (int epoch = 0; epoch < MAX_EPOCHS; epoch++)
+                        {
+                            do
+                            {
+                                while (reader.Read())
+                                {
+                                    for (int column = 0; column < MAX_COLUMN; column++)
+                                    {
+                                        if (column == MAX_COLUMN - 1)
+                                        {
+                                            nn.setDesiredOutput(0, reader.GetDouble(column));
+                                            nn.learn();
+                                            Debug.WriteLine(reader.GetDouble(column));
+                                        }
+                                        else
+                                        {
+                                            nn.setInputs(column, reader.GetDouble(column));
+                                        }
 
-                    nn.setInputs(0, 8.0);
-                    nn.setInputs(1, 183.0);
-                    nn.setInputs(2, 64.0);
-                    nn.setInputs(3, 23.3);
-                    nn.setInputs(4, 0.672);
-                    nn.setInputs(5, 32.0);
-                    nn.setDesiredOutput(0, 1.0);
-                    nn.learn();
+                                    }
 
-                    nn.setInputs(0, 1.0);
-                    nn.setInputs(1, 89.0);
-                    nn.setInputs(2, 66.0);
-                    nn.setInputs(3, 28.1);
-                    nn.setInputs(4, 0.167);
-                    nn.setInputs(5, 21.0);
-                    nn.setDesiredOutput(0, 0.0);
-                    nn.learn();
+                                }
+                                if(ROW_CTR == 700)
+                                {
+                                    Debug.WriteLine(ROW_CTR);
+                                    testBtn.Enabled = true;
+                                    testBtn.BackColor = SystemColors.Highlight;
+                                    return;
+                                }
+                                ROW_CTR++;
+                            } while (reader.NextResult());       
+                        }
 
-                    nn.setInputs(0, 0.0);
-                    nn.setInputs(1, 137.0);
-                    nn.setInputs(2, 40.0);
-                    nn.setInputs(3, 43.1);
-                    nn.setInputs(4, 2.288);
-                    nn.setInputs(5, 33.0);
-                    nn.setDesiredOutput(0, 1.0);
-                    nn.learn();
+                    }
                 }
 
                 testBtn.Enabled = true;
