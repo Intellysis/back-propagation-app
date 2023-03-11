@@ -17,15 +17,10 @@ namespace BackPropagation
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             //2 input
             //3 hidden
             //1 output
-            nn = new NeuralNet(6,10,1);
-            
+            nn = new NeuralNet(6, 10, 1);
         }
 
         private void button3_Click(object sender, EventArgs e)
