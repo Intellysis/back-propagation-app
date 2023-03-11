@@ -46,9 +46,10 @@ namespace BackPropagation
                     {
                         int MAX_COLUMN = reader.FieldCount;
                         int MAX_EPOCHS = Convert.ToInt32(textBox7.Text);
-                        int ROW_CTR = 0;
                         for (int epoch = 0; epoch < MAX_EPOCHS; epoch++)
                         {
+                            reader.Reset();
+                            int ROW_CTR = 0;
                             do
                             {
                                 while (reader.Read())
@@ -59,7 +60,6 @@ namespace BackPropagation
                                         {
                                             nn.setDesiredOutput(0, reader.GetDouble(column));
                                             nn.learn();
-                                            Debug.WriteLine(reader.GetDouble(column));
                                         }
                                         else
                                         {
@@ -67,16 +67,15 @@ namespace BackPropagation
                                         }
 
                                     }
-
+                                    if (ROW_CTR == 100)
+                                    {
+                                        testBtn.Enabled = true;
+                                        testBtn.BackColor = SystemColors.Highlight;
+                                        break;
+                                    }
+                                    ROW_CTR++;
                                 }
-                                if(ROW_CTR == 700)
-                                {
-                                    Debug.WriteLine(ROW_CTR);
-                                    testBtn.Enabled = true;
-                                    testBtn.BackColor = SystemColors.Highlight;
-                                    return;
-                                }
-                                ROW_CTR++;
+                                
                             } while (reader.NextResult());       
                         }
 
