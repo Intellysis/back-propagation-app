@@ -251,6 +251,7 @@
             this.testBtn.TabIndex = 36;
             this.testBtn.Text = "Test";
             this.testBtn.UseVisualStyleBackColor = false;
+            this.testBtn.Click += new System.EventHandler(this.testBtn_Click);
             // 
             // trainBtn
             // 
