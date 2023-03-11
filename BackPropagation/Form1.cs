@@ -30,24 +30,6 @@ namespace BackPropagation
             nn.run();
             textBox3.Text = "" + nn.getOuputData(0);
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void trainBtn_Click(object sender, EventArgs e)
         {
