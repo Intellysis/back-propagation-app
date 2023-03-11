@@ -42,12 +42,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.outputLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.testBtn = new System.Windows.Forms.Button();
             this.trainBtn = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label10
@@ -206,25 +207,26 @@
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label9.Location = new System.Drawing.Point(676, 244);
+            this.label9.Location = new System.Drawing.Point(714, 409);
             this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(350, 68);
             this.label9.TabIndex = 35;
+            this.label9.Text = "Closer to 0 output value indicate a lower chance of diabetes";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // outputLbl
             // 
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label5.Location = new System.Drawing.Point(676, 337);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(350, 71);
-            this.label5.TabIndex = 34;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.outputLbl.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.outputLbl.Location = new System.Drawing.Point(714, 203);
+            this.outputLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.outputLbl.Name = "outputLbl";
+            this.outputLbl.Size = new System.Drawing.Size(350, 171);
+            this.outputLbl.TabIndex = 34;
+            this.outputLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -241,10 +243,11 @@
             // 
             // testBtn
             // 
-            this.testBtn.BackColor = System.Drawing.SystemColors.Highlight;
+            this.testBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.testBtn.Enabled = false;
             this.testBtn.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.testBtn.Location = new System.Drawing.Point(806, 502);
+            this.testBtn.Location = new System.Drawing.Point(431, 516);
             this.testBtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.testBtn.Name = "testBtn";
             this.testBtn.Size = new System.Drawing.Size(190, 48);
@@ -258,7 +261,7 @@
             this.trainBtn.BackColor = System.Drawing.SystemColors.Highlight;
             this.trainBtn.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trainBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.trainBtn.Location = new System.Drawing.Point(431, 502);
+            this.trainBtn.Location = new System.Drawing.Point(220, 516);
             this.trainBtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.trainBtn.Name = "trainBtn";
             this.trainBtn.Size = new System.Drawing.Size(190, 48);
@@ -291,17 +294,32 @@
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label11.UseMnemonic = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Location = new System.Drawing.Point(802, 516);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(190, 48);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 608);
+            this.ClientSize = new System.Drawing.Size(1224, 671);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.trainBtn);
             this.Controls.Add(this.testBtn);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.outputLbl);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -340,12 +358,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label outputLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button testBtn;
         private System.Windows.Forms.Button trainBtn;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button1;
     }
 }
 
